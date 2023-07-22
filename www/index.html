@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/core/css/main.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"/>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <title>Web Server | Acceuil</title>
+    <style>
+        body{margin-top:20px;
+<!--background:#DCDCDC;-->
+background:#fff;
+}
+.pricing-content{position:relative;}
+.pricing_design{
+    position: relative;
+    margin: 0px 15px;
+}
+.pricing_design .single-pricing{
+    background:#554c86;
+    padding: 60px 40px;
+    border-radius:30px;
+    box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+    position: relative;
+    z-index: 1;
+}
+.pricing_design .single-pricing:before{
+    content: "";
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px 18px 190px 18px;
+    border: 1px solid #eee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.price-head{}
+.price-head h2 {
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 600;
+}
+.price-head h1 {
+	font-weight: 600;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+.price-head span{}
+
+.single-pricing ul{list-style:none;margin-top: 30px;}
+.single-pricing ul li {
+	line-height: 36px;
+}
+.single-pricing ul li i {
+	background: #554c86;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 30px;
+	font-size: 11px;
+	text-align: center;
+	line-height: 20px;
+	margin-right: 6px;
+}
+.pricing-price{}
+
+.price_btn {
+	background: #554c86;
+	padding: 10px 30px;
+	color: #fff;
+	display: inline-block;
+	margin-top: 20px;
+	border-radius: 2px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.price_btn:hover{background:#0aa1d6;}
+a{
+text-decoration:none;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+.text-center {
+    text-align: center!important;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 0;
+    position: relative;
+    text-transform: capitalize;
+}
+.footer {
+    background:#232a34;
+	padding-bottom: 50px;
+	padding-top: 80px;
+}
+.footer_menu {
+	margin-bottom: 20px;
+}
+.footer_menu ul {
+	list-style: none;
+	text-align: center;
+}
+.footer_menu ul li{display: inline-block;}
+.footer_menu ul li a {
+	color:#fff;
+	padding: 0 10px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer_menu ul li a:hover{color:#554c86;}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile{margin-bottom:40px;}
+.footer_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.footer_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) {
+.footer_profile ul li{margin:2px;}
+}
+.footer_profile ul li a img{width:60px;}
+
+.footer_profile ul li a {
+	background: #554c86;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 50%;
+	line-height: 40px;
+	box-sizing: border-box;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	transition: .3s;
+	color: #fff;
+}
+.footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css"
+      integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous"/>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="/">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Background image -->
+<div
+        class="p-5 text-center bg-image"
+        style="
+      background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+      height: 400px;
+    "
+>
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+                <h1 class="mb-3">Heading</h1>
+                <h4 class="mb-3">Subheading</h4>
+                <a class="btn btn-outline-light btn-lg" href="#!" role="button"
+                >Call to action</a
+                >
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Background image -->
+</header>
+
+<section id="pricing" class="pricing-content section-padding mt-4 ">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>Pricing Plans</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
+                 data-wow-offset="0"
+                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">
+                            <h2>Starter</h2>
+                            <h1>$0</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price">
+
+                        </div>
+                        <a href="#" class="price_btn">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+                 data-wow-offset="0"
+                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">
+                            <h2>Personal</h2>
+                            <h1 class="price">$29</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price">
+
+                        </div>
+                        <a href="#" class="price_btn">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->
+            <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
+                 data-wow-offset="0"
+                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="pricing_design">
+                    <div class="single-pricing">
+                        <div class="price-head">
+                            <h2>Ultimate</h2>
+                            <h1 class="price">$49</h1>
+                            <span>/Monthly</span>
+                        </div>
+                        <ul>
+                            <li><b>15</b> website</li>
+                            <li><b>50GB</b> Disk Space</li>
+                            <li><b>50</b> Email</li>
+                            <li><b>50GB</b> Bandwidth</li>
+                            <li><b>10</b> Subdomains</li>
+                            <li><b>Unlimited</b> Support</li>
+                        </ul>
+                        <div class="pricing-price">
+
+                        </div>
+                        <a href="#" class="price_btn">Order Now</a>
+                    </div>
+                </div>
+            </div><!--- END COL -->
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
+</section>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="footer mt-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div class="footer_menu">
+                    <ul>
+                        <li> <a href="/">Acceuil</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer_copyright">
+                    <p>© 2021 Sai. All Rights Reserved.</p>
+                </div>
+                <div class="footer_profile">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div><!--- END COL -->
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
+</div>
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+</body>
+</html>
